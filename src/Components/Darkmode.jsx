@@ -13,6 +13,7 @@ function Darkmode() {
         document.querySelector("body").setAttribute("data-theme","light")
 localStorage.setItem("selectedTheme","light")
     }
+    const selectedTheme=localStorage.getItem("selectedTheme");
   const toggleTheme=(e)=>{
 if (e.target.checked)setDarkMode();
 else setLightTheme();
