@@ -1,6 +1,6 @@
 import React from 'react'
 import sun from "../assets/sun.png"
-import moon from "../assets/moon.webp"
+import moon from "../assets/moon.png"
 import './DarkMode.css'
 
 
@@ -14,17 +14,28 @@ function Darkmode() {
 localStorage.setItem("selectedTheme","light")
     }
     const selectedTheme=localStorage.getItem("selectedTheme");
+if (selectedTheme==="dark"){
+    setDarkMode();
+}
+
   const toggleTheme=(e)=>{
 if (e.target.checked)setDarkMode();
 else setLightTheme();
   }
   return (
   <>
+  <div className='button'>
+    <input type="checkbox"
+   id='darkmode-toggle'
+   onChange={toggleTheme}
+   defaultChecked={selectedTheme==="dark"}
+   />
   <label for="darkmode-toggle">
-    <img src={sun}/>
-    <img src={moon}/>
+ <img src={sun}/>
+ <img src={moon}/>
+
   </label>
-  <input type="checkbox" id='darkmode-toggle'onChange={toggleTheme}/>
+</div>
   </>
   )
 }

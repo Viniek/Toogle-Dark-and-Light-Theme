@@ -7,7 +7,7 @@ body {
 a {
   color: var(--link_color);
 }
-*{transition :all 0.9s ease-in-out;
+*{transition :all 0.6s ease-in-out;
 }
 
 :root{
