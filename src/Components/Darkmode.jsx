@@ -18,7 +18,7 @@ else setLightTheme();
   return (
   <>
   <label for="darkmode-toggle"><sun/> <moon/></label>
-  <input type="checkbox" id='darkmode-toggle'
+  <input type="checkbox" id='darkmode-toggle'onChange={toggleTheme}/>
   </>
   )
 }
