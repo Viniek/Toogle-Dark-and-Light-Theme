@@ -1,6 +1,7 @@
 import React from 'react'
 import sun from "../assets/sun.png"
 import moon from "../assets/moon.webp"
+import './DarkMode.css'
 
 
 function Darkmode() {
@@ -17,7 +18,10 @@ else setLightTheme();
   }
   return (
   <>
-  <label for="darkmode-toggle"><sun/> <moon/></label>
+  <label for="darkmode-toggle">
+    <img src={sun}/>
+    <img src={moon}/>
+  </label>
   <input type="checkbox" id='darkmode-toggle'onChange={toggleTheme}/>
   </>
   )

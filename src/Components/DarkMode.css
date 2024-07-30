@@ -1,0 +1,23 @@
+.App-header{
+  background-color: var(--body_background);
+  color:var(--body_color);
+}
+
+.App-link{
+  color:var(--link-color);
+}
+
+label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+img {
+    width: 10vw; 
+    /* margin: 0 8px; */
+}
+
+input[type="checkbox"] {
+    display: none;
+}
